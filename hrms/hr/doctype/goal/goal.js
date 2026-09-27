@@ -110,7 +110,7 @@ frappe.ui.form.on("Goal", {
 		if (frm.doc.__islocal || !frm.doc.is_group) return;
 
 		let msg = __(
-			"Changing KRA in this parent goal will align all the child goals to the same KRA, if any.",
+			"Modifying the KRA in the parent goal will specifically impact those child goals that share the same KRA; any other child goals with different KRAs will remain unaffected.",
 		);
 		msg += "<br>";
 		msg += __("Do you still want to proceed?");
